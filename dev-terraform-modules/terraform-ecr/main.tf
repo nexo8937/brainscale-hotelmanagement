@@ -1,6 +1,7 @@
 #--------Provider--------
+
 provider "aws" {
-    region = "eu-west-1"
+  region = "eu-west-1"
 }
 
 
@@ -8,8 +9,8 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "tfstate-hotelmanagement"
-    key    = "rds"
+    key    = "dev/ecr"
     region = "eu-west-1"
-    dynamodb_table =  "terraform-lock"
+    dynamodb_table =  "terraform-lock-dev"
   }
 }

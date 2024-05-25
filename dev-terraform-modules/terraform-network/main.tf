@@ -9,8 +9,8 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "tfstate-hotelmanagement"
-    key    = "ecr"
+    key    = "dev/network"
     region = "eu-west-1"
-    dynamodb_table =  "terraform-lock"
+    dynamodb_table =  "terraform-lock-dev"
   }
 }
