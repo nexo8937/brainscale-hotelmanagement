@@ -10,7 +10,7 @@ module "eks" {
     desired_size             = "1"
     max_size                 = "2"
     min_size                 = "1"             
-    env                      = "dev"
+    env                      = "prod"
 }
 
 #remote-state-data
@@ -18,7 +18,7 @@ data "terraform_remote_state" "backend" {
   backend = "s3"
   config = {
     bucket = "tfstate-hotelmanagement"
-    key    = "dev/network"
+    key    = "prod/network"
     region = "eu-west-1"
   }
 }
