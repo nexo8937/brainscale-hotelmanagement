@@ -1,7 +1,5 @@
 container:
   name:  container
-  image: test
-
-#  image: 548844171305.dkr.ecr.eu-west-1.amazonaws.com/hotel-management-dev:latest
+  image: 548844171305.dkr.ecr.eu-west-1.amazonaws.com/hotel-management-dev:latest
 
 replicacount: 2
